@@ -1,7 +1,5 @@
 By: Wampa
-Github repository: 
-All Scrips require auto hotkey to be installed!
-Here is a link to the download page: https://www.autohotkey.com/download/
+Github repository: https://github.com/TheRagingWampa/PUBG_AHK
 
 Warning: I am not responsible for anything that happens to your computer, software, and/or accounts if you use this autohotkey script. I do use it myself, it uses random click times and should be safe.
 
