@@ -2,6 +2,7 @@
 
 v2.5: 
 Major Update!
+Went on Github!
 Added Changelog.
 Disabled Compensation.
 Improved keybindings' modifiers.
