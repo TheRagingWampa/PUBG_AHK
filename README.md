@@ -22,7 +22,7 @@ Simple disables the mouse wheel from being used in PUBG.
 You can still use the mouse wheel in the menus just not to change weapons.  
  
 # Mute Current Application:  
-A script that can be used on anything it mutes the current application you are in when you press F1.  
+A script that can be used on anything it mutes and unmutes the current application you are in when you press F1.  
 
 # Changelog:
 
