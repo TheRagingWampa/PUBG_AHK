@@ -1,4 +1,4 @@
-; Autofire for PUBG made by Wampa v2.5
+; Autofire for PUBG made by Wampa v2.6
 ;---------------------------------------
 ; Script Settings
 ;---------------------------------------
@@ -46,8 +46,10 @@
 ; Disable Mouse Wheel
 ;---------------------------------------
 
-~$*WheelUp::Return ; Disables Mouse Wheel Up.
-~$*WheelDown::Return ; Disables Mouse Wheel Down.
+	WheelUp::Return 			; Disables Mouse Wheel Up.
+	~$*WheelUp::Return 			; Disables Mouse Wheel Up.
+	WheelDown::Return 			; Disables Mouse Wheel Up.
+	~$*WheelDown::Return 		; Disables Mouse Wheel Down.
 
 ;---------------------------------------
 ; Autofire Setup
