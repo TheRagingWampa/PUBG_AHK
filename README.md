@@ -26,6 +26,9 @@ A script that can be used on anything it mutes and unmutes the current applicati
 
 # Changelog:
 
+v2.6
+Fixed Disabled Mouse Wheel.
+
 v2.5:   
 Major Update!  
 Went on Github!  
