@@ -26,6 +26,9 @@ A script that can be used on anything it mutes and unmutes the current applicati
 
 # Changelog:
 
+v2.7
+Made all jumps crouch jumps. (Only works with default bindings you will need to change the script yourself if you use other keys.)
+
 v2.6:  
 Fixed Disabled Mouse Wheel.
 
