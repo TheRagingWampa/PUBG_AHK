@@ -17,15 +17,17 @@ Toggle Autofire on and off - "B"
 Enable Autofire - Numpad 1/Numpad End  
 Disable Autofire - Numpad 0/Numpad Insert  
 
+# Crouch Jump
+All jumps made with the default keybindings will be crouch jumps, allowing the player to jump over and on top of things otherwise impossible.
+
 # Disable Mouse Wheel:  
-Simple disables the mouse wheel from being used in PUBG.  
+Simply disables the mouse wheel from being used in PUBG.  
 You can still use the mouse wheel in the menus just not to change weapons.  
  
 # Mute Current Application:  
 A script that can be used on anything it mutes and unmutes the current application you are in when you press F1.  
 
 # Changelog:
-
 v2.7
 Made all jumps crouch jumps. (Only works with default bindings you will need to change the script yourself if you use other keys.)
 
