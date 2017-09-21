@@ -1,4 +1,4 @@
-; Autofire for PUBG made by Wampa v2.6
+; Autofire for PUBG made by Wampa v2.7
 ;---------------------------------------
 ; Script Settings
 ;---------------------------------------
@@ -45,12 +45,18 @@
 ;---------------------------------------
 ; Disable Mouse Wheel
 ;---------------------------------------
-	
+
 	WheelUp::Return 			; Disables Mouse Wheel Up.
 	~$*WheelUp::Return 			; Disables Mouse Wheel Up.
 	WheelDown::Return 			; Disables Mouse Wheel Up.
 	~$*WheelDown::Return 		; Disables Mouse Wheel Down.
 
+;---------------------------------------   
+; Crouch Jumping
+;---------------------------------------
+   
+   ~space::c					; Crouches when you press the spacebar making jumps higher than normal.
+   
 ;---------------------------------------
 ; Autofire Setup
 ;---------------------------------------
