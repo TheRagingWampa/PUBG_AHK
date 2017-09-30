@@ -14,7 +14,7 @@
 
 	V_AutoFire = 0 ; Value for Autofire being on and off.
 	isMouseShown() ; Value for suspending when mouse is visible.
-	comp = 0 ; Value for compensation, currently disabled due to unreliability.
+	comp = 10 ; Value for compensation, currently disabled due to unreliability.
    
 ;---------------------------------------   
 ; Suspend if mouse is visible
@@ -29,9 +29,9 @@
 		Result := NumGet(InfoStruct, 8)
 
 	if Result > 1
-      Return 1
+     		 Return 1
 	else
-      Return 0
+      		Return 0
 	}
 	Loop
 	{
@@ -90,20 +90,20 @@
 		SetTimer, RemoveToolTip, 2000
 	Return
 	
-	/*
+	
 	~$*Numpad5::			; Displays compensation value, currently disabled.
 	   tooltip, %comp%, 930, 650
 	   SetTimer, RemoveToolTip, 2000
 	Return
 	
 	~$*NumpadAdd::			; Adds compensation value, currently disabled.
-		comp := comp + 5
+		comp := comp + 1
 		tooltip, %comp%, 930, 650
 		SetTimer, RemoveToolTip, 2000
 	Return
    
 	~$*NumpadSub::			; Subtracts compensation value, currently disabled.
-		comp := comp - 5
+		comp := comp - 1
 		tooltip, %comp%, 930, 650
 		SetTimer, RemoveToolTip, 2000
 	Return
@@ -112,8 +112,16 @@
 		comp := 0
 		tooltip, %comp%, 930, 650
 		SetTimer, RemoveToolTip, 2000
-	Return
-	*/
+	Return	
+
+;---------------------------------------
+;Compensation
+;---------------------------------------
+
+mouseXY(x,y) ;Moves the mouse down to compensate recoil (value in compVal var).
+{
+  DllCall("mouse_event",uint,1,int,x,int,y,uint,0,int,0)
+}
    
 ;---------------------------------------
 ; Auto Firing
@@ -129,7 +137,7 @@
 			Break
 		MouseClick, Left,,, 1
 		Gosub, RandomSleep
-		Mousemove, 0, %comp%,, R 	; Compensation, currently disabled.
+		mouseXY(0, comp)
 	}
 	}
 	Return 
