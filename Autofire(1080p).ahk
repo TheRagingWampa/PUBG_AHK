@@ -14,7 +14,7 @@
 
 	V_AutoFire = 0 ; Value for Autofire being on and off.
 	isMouseShown() ; Value for suspending when mouse is visible.
-	comp = 10 ; Value for compensation, currently disabled due to unreliability.
+	comp = 0 ; Value for compensation.
    
 ;---------------------------------------   
 ; Suspend if mouse is visible
@@ -91,24 +91,24 @@
 	Return
 	
 	
-	~$*Numpad5::			; Displays compensation value, currently disabled.
+	~$*Numpad5::			; Displays compensation value
 	   tooltip, %comp%, 930, 650
 	   SetTimer, RemoveToolTip, 2000
 	Return
 	
-	~$*NumpadAdd::			; Adds compensation value, currently disabled.
+	~$*NumpadAdd::			; Adds compensation value
 		comp := comp + 1
 		tooltip, %comp%, 930, 650
 		SetTimer, RemoveToolTip, 2000
 	Return
    
-	~$*NumpadSub::			; Subtracts compensation value, currently disabled.
+	~$*NumpadSub::			; Subtracts compensation value
 		comp := comp - 1
 		tooltip, %comp%, 930, 650
 		SetTimer, RemoveToolTip, 2000
 	Return
 
-	~$*NumpadEnter::		; Resets compensation value to 0, currently disabled.
+	~$*NumpadEnter::		; Resets compensation value to 0
 		comp := 0
 		tooltip, %comp%, 930, 650
 		SetTimer, RemoveToolTip, 2000
